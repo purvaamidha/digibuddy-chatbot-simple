@@ -1,10 +1,6 @@
-const voiceButton = document.createElement("button");
-voiceButton.innerText = "Speak";
-document.body.appendChild(voiceButton);
-
-voiceButton.addEventListener("click", function() {
+document.getElementById("voice-btn").addEventListener("click", function() {
     if (!("webkitSpeechRecognition" in window)) {
-        alert("Speech recognition not supported in this browser.");
+        alert("Sorry, your browser doesn't support speech recognition.");
         return;
     }
 
