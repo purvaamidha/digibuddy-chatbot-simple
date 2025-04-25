@@ -27,31 +27,32 @@ function addMessage(sender, message) {
 }
 
 function getBotResponse(input) {
-    let botResponse = "Sorry, I didn't quite catch that. Could you please ask again?";
-
+    let botResponse = "Whoa, that’s a big question! 🤔 Let me think...";
     const normalizedInput = input.toLowerCase();
 
-    // Expanded knowledge base
+    // Fun and interactive answers
     if (normalizedInput.includes("what is a browser")) {
-        botResponse = "A browser is like a window to the internet. You use it to look at websites like Google or Facebook!";
+        botResponse = "A browser is like a magic window to the internet! 🌐 You type in an address, and bam! You can explore the world! 🚀";
     } else if (normalizedInput.includes("how to set up an email")) {
-        botResponse = "Setting up an email is easy! Visit Gmail or Yahoo, create an account, and you're ready to send emails!";
+        botResponse = "Setting up an email is like getting your digital mailbox! Just pick Gmail or Yahoo, and follow a few simple steps. 📧 Easy peasy!";
     } else if (normalizedInput.includes("how to make a video call")) {
-        botResponse = "Making a video call is fun! Use apps like Zoom or WhatsApp to call your friends and family with your camera.";
+        botResponse = "Video calls are like sending your face over the internet! 😁 Use apps like Zoom or WhatsApp, click 'Call,' and you’re on camera! 🎥";
     } else if (normalizedInput.includes("what is wifi")) {
-        botResponse = "Wi-Fi is like a magical invisible bridge that connects your device to the internet without any wires!";
+        botResponse = "Wi-Fi is like your internet superhero! 🦸‍♂️ It flies through the air and connects your devices to the online world—no wires needed! ⚡";
     } else if (normalizedInput.includes("how to use whatsapp")) {
-        botResponse = "WhatsApp is a great way to chat with friends! Just download the app, sign up with your phone number, and start chatting.";
-    } else if (normalizedInput.includes("how to pay bills online")) {
-        botResponse = "You can pay bills online by visiting your provider's website, logging in, and choosing the payment option. It's easy and safe!";
+        botResponse = "WhatsApp is like texting your friends with a magic wand! 📱 You can text, send pictures, and even make calls! It's super fun!";
     } else if (normalizedInput.includes("how to shop online")) {
-        botResponse = "Shopping online is like visiting a store from your home! Visit websites like Amazon, pick what you want, and check out!";
+        botResponse = "Shopping online is like having a store in your pocket! 🛒 Pick what you like, pay, and the delivery truck shows up at your door! 🚚";
     } else if (normalizedInput.includes("how to use facebook")) {
-        botResponse = "Facebook helps you connect with others! Create an account, add friends, and start posting pictures and updates!";
+        botResponse = "Facebook is like a digital scrapbook for your life! 📸 Share photos, status updates, and memories with your friends and family!";
     } else if (normalizedInput.includes("what is email")) {
-        botResponse = "An email is a way of sending messages over the internet. It's like writing a letter, but faster!";
+        botResponse = "Email is like sending a letter, but in the blink of an eye! ✨ Type your message, hit 'send,' and your friend gets it instantly! 📩";
+    } else if (normalizedInput.includes("tell me a fun fact")) {
+        botResponse = "Did you know? The first email ever sent was in 1971! It said 'QWERTYUIOP.' How simple, huh? 😂";
+    } else if (normalizedInput.includes("what is the internet")) {
+        botResponse = "The internet is like a giant web where information is stored. It’s like the world’s library that never closes! 📚";
     } else {
-        botResponse = "I'm still learning! Ask me about things like email, Wi-Fi, video calls, and more. I'll try my best to help!";
+        botResponse = "I didn’t quite catch that! 😅 Ask me more about the internet, social media, or digital tips, and I'll do my best to help!";
     }
 
     setTimeout(function() {
