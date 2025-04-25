@@ -50,9 +50,17 @@ function getBotResponse(input) {
     } else if (normalizedInput.includes("tell me a fun fact")) {
         botResponse = "Did you know? The first email ever sent was in 1971! It said 'QWERTYUIOP.' How simple, huh? 😂";
     } else if (normalizedInput.includes("what is the internet")) {
-        botResponse = "The internet is like a giant web where information is stored. It’s like the world’s library that never closes! 📚";
+        botResponse = "The internet is like a giant web where information is stored. It’s like the world’s library that never closes! 📚"
+    } else if (normalizedInput.includes("admissions")) {
+        botResponse = "Admissions can be tricky! But don't worry, check out the college websites or consult an advisor. 🎓";
+    } else if (normalizedInput.includes("exams")) {
+        botResponse = "Exams are important, but remember, it's not about studying all night. 😴 Plan your study schedule!";
+    } else if (normalizedInput.includes("scholarships")) {
+        botResponse = "Scholarships can be a game-changer! Look for them on college websites and external scholarship portals. 💸";
+    } else if (normalizedInput.includes("career advice")) {
+        botResponse = "Career advice? Focus on building skills, and don't forget to network with professionals. 🧑‍💻";
     } else {
-        botResponse = "I didn’t quite catch that! 😅 Ask me more about the internet, social media, or digital tips, and I'll do my best to help!";
+        botResponse = "I didn’t quite catch that! 😅 Ask me more about the internet, social media, or college tips career scholarship exams or may be admissions, and I'll do my best to help!";
     }
 
     setTimeout(function() {
